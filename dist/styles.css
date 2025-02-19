@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEF9E1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #E5D0AC;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+}
+
+#search {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b6a3a3;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px #000000;
+}
+#search:focus {
+  outline: none;
+}
+
+h1 {
+  display: block;
+  color: #2D336B;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  min-height: 300px;
+}
+
+.card {
+  background: #FFF2F2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #2D336B;
+  box-shadow: 0px 4px 6px #000000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #000000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #2D336B;
+  cursor: not-allowed;
+}
+
+.page-btn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #2D336B;
+  color: white;
+  cursor: pointer;
+}
+.page-btn.active {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (width < 768px) {
+  #cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=styles.css.map */
